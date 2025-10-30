@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://getbootstrap.com/docs/4.0/examples/album/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="assets/favo.ico"/>
+    <title>Jamal Woods</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./Album example for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Album example for Bootstrap_files/album.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="bg-dark collapse" id="navbarHeader" style="">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">Hi there!</h4> 
+              <p class="text-muted">Welcome to my personal website where I showcase some of the things I've been working on in the recent years. I hope you enjoy exploring!</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://www.linkedin.com/in/jamal-w-549693125/" class="text-white">Connect on Linkedin</a></li>
+                <li><a href="mailto:jamalcwoods@gmail.com" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <div class="text-white">
+            <strong>Jamal Woods</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+        <section class="jumbotron text-center">
+          <div class="container">
+            <a href="./index.html"><button class="returnHome">Return to Home</button></a>
+            <h1 class="jumbotron-heading">Lost Ones</h1>
+            <img style="width: 80%;margin-top: 3%;margin-bottom: 10%;border-radius: 20%;" src ="assets/gifs/dds.gif">
+            <img style="width: 80%;margin-top: 3%;margin-bottom: 10%;border-radius: 20%;" src ="assets/gifs/dds2.gif">
+            <p class="aboutText">
+                Lost Ones is a personal project that I work on from time to time. The project is a 2 dimensional side scroll platofrmer that I built to test a procedural world generation algorithim and a more intimate combat system that is heavily inspired by rock paper scissors. This game is currently a 
+                solo project that I mostly work on during my spare time. The procedural world generation system was inspired by similar mechanics that I experience while playing games such as Warframe. In Warframe, levels are comprised of multiple rooms that are place like building blocks to form the layout for the entire map. 
+                This system inpired me to design Lost Ones' level generation based on a tree data structure. The room the player starts in is the root of the level and branches outwards from there with different rooms being added on. Some rooms would have more than one opening allowing for the main branch to essentially split and create alternate paths or dead ends. Additionally, the generaiton of these levels was tied to a seed so that a certain generation patter could be replicated and reused.   
+
+            </p>
+            <br>
+            <p class="aboutText">
+                The combat system was inpired by my work on another game, Discord Duels, which you can find more about on this website. The goal of this system was to try and create a combat system that discouraged players from just mashing buttons to defeat all enemies as they progressed through levels. I wanted each combat interaction to feel intimate to the point where the player isn't thinking only about what actions they can prefrom, but also the actions that the enemy can or is preforming. 
+                In the current implementation of the system, all entities, both the player and enemies, can only attack when there is a unit in their attack range. When an attack is triggered, the entity will do an animation. If a targeted enemy is no longer in the attack range of the entitry when the animation finishes, the attack will miss. If the target is still in range, the target will be hit by the attack. However, if the targeted enemy is also targeting it's attacker and starts it's own attack before the first attack finishes the animation, the attacks will clash causing both entities to sustain damage.
+                The damage taken is based on the type of attack each entity used. Attacks are split into 3 different types and use a similar system of rock paper scissors where each attack type had a type it was weak to and a type it was strong against. When two attacks clashed, the attack that was superior to the other would go on to do 100% of the intended damage while the inferior attack would only do 25%. When two attacks of the same type clashed, both attacks would only do 50% of their inteded damage. This is the foundation of the combat system in Lost Ones, which is extremly similar to the combat in Discord Duels, but because of the game being a 2D platformer and not a text based RPG I was able to add more actions players could preform such as dodging attacks and timiing their actions differently than their opponent.
+            </p>
+            <a href="./index.html"><button class="returnHome">Return to Home</button></a>
+        </div>
+    </main> 
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <p>Copyright © Jamal Woods 2020</p>
+        </p>
+        <h1>Want to get in touch?</h1>
+        <p>Email me at jamalcwoods@gmail.com or connect on <a href="https://www.linkedin.com/in/jamal-w-549693125/"> Linkedin</a></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== --> 
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Album example for Bootstrap_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./Album example for Bootstrap_files/popper.min.js.download"></script>
+    <script src="./Album example for Bootstrap_files/bootstrap.min.js.download"></script>
+    <script src="./Album example for Bootstrap_files/holder.min.js.download"></script>
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="348" height="226" viewBox="0 0 348 226" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body><style id="stylish-1" class="stylish" type="text/css">/* Google Docs Dark UI by UGoBoom         */
+/* Version 1.0                            */
+/* Published Oct 26 2015                  */
+/* Aesthetic inspired by Vertex-gtk theme */
+
+@namespace url(http://www.w3.org/1999/xhtml);</style></html>
